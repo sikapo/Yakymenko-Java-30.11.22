@@ -11,24 +11,18 @@ public class Main {
         int chooseAmount = scanner.nextInt();
 
         switch (chooseDrink) {
-            case "COFE":
-                System.out.print("Its will cost you " + (new DrincsPrice().priseOfCofe * chooseAmount) + " baks.");
-                break;
-            case "COLA":
-                System.out.print("Its will cost you " + (new DrincsPrice().priseOfCola * chooseAmount) + " baks.");
-                break;
-            case "LIMONADE":
-                System.out.print("Its will cost you " + (new DrincsPrice().priseOfLimonade * chooseAmount) + " baks.");
-                break;
-            case "MOJITO":
-                System.out.print("Its will cost you " + (new DrincsPrice().priseOfMojito * chooseAmount) + " baks.");
-                break;
-            case "SODA":
-                System.out.print("Its will cost you " + (new DrincsPrice().priseOfSoda * chooseAmount) + " baks.");
-                break;
-            case "TEA":
-                System.out.print("Its will cost you " + (new DrincsPrice().priseOfTea * chooseAmount) + " baks.");
-                break;
+            case "COFE" ->
+                    System.out.print("It's will cost you " + (new DrincsPrice().priseOfCofe * chooseAmount) + " baks.");
+            case "COLA" ->
+                    System.out.print("It's will cost you " + (new DrincsPrice().priseOfCola * chooseAmount) + " baks.");
+            case "LIMONADE" ->
+                    System.out.print("It's will cost you " + (new DrincsPrice().priseOfLimonade * chooseAmount) + " baks.");
+            case "MOJITO" ->
+                    System.out.print("It's will cost you " + (new DrincsPrice().priseOfMojito * chooseAmount) + " baks.");
+            case "SODA" ->
+                    System.out.print("It's will cost you " + (new DrincsPrice().priseOfSoda * chooseAmount) + " baks.");
+            case "TEA" ->
+                    System.out.print("It's will cost you " + (new DrincsPrice().priseOfTea * chooseAmount) + " baks.");
         }
     }
 }
